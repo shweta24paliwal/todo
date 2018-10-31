@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: sans-serif;
+    background: #eee;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+}
+.title{
+      color: #7E57C2;
+      font-size: 20px;
+      font-weight:200;
+      text-align: center;
+}
+.notes-container{
+    margin-top: 10px;
+}
+.text-align-center{
+    text-align: center;
+}
+h5{
+    color: #8D6E63;
+}
+.col-50{
+    width: 33%;
+    float: left;
+    min-height: 500px;
+    text-align: left;
+    padding: 0px 10px;
+}
+.col-50:nth-child(2){
+    border-left: 1px dotted black;
+    border-right: 1px dotted black;
+    background: #dfdcdc;
+    margin-right: 10px;
+}
+.col-50:nth-child(3){
+  background:#dfdcdc;
+}
+.text-input {
+    outline: none;
+    border: 2px solid #ccc;
+    width: 400px;
+    height: 100px;
+    font-size: 16px;
+}
+.add-btn {
+      background: #5C6BC0;
+      color: #fff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px 30px;
+      font-size: 16px;
+      border-radius: 3px;
+      margin-top: 10px;
+  }
+.todo-note{
+    height: 400px; 
+    overflow:auto;
+}
+.note{
+    background: #fff;
+    padding: 10px 25px 40px 10px;
+    min-height: 120px;
+    border-left: 5px solid #EF5350;
+    position: relative;
+}
+.complete-note{
+    background: #fff;
+    padding: 10px 25px 2px 10px;
+    min-height:50px;
+    border-left: 5px solid rgb(7, 238, 76);
+    position: relative;
+   
+}
+.edit-btn{
+    background: #3a3333;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 3px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+.complete-btn{
+    background: #3a3333;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 3px;
+    position: absolute;
+    right: 60px;
+    bottom: 5px;
+} 
+.close-btn{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    background:#3a3333;
+    color: white;
+    float: right;
+}
+/* .ansInput{
+    width: 60px;
+} */
+
+  
+  
+ 
