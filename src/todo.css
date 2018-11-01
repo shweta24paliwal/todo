@@ -31,8 +31,6 @@ h5{
     padding: 0px 10px;
 }
 .col-50:nth-child(2){
-    border-left: 1px dotted black;
-    border-right: 1px dotted black;
     background: #dfdcdc;
     margin-right: 10px;
 }

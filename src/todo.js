@@ -53,24 +53,18 @@ class ToDo extends Component{
       
     }
     editHandler(id){
-        //    if(this.state.editer === false){
-        //     this.setState = ({editor:true});
         const findText = this.state.notes.find((obj) =>{
-        return obj.text;
+        return obj.id == id;
         });
-   
-           let updatedText = prompt("Edit your text here",findText.text)
-          
-           let updatedNote = this.state.notes.map(note =>{
+        let updatedText = prompt("Edit your text here",findText.text)
+        let updatedNote = this.state.notes.map(note =>{
 			if(note.id === id){
                 note = {...note, text:updatedText};
             }
             return note;
-           
         });
         this.setState({notes:updatedNote});
-       
-	}
+    }
         
     
 

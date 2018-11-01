@@ -16,6 +16,10 @@ class AddNote extends Component{
     }
 
     addBtnClickHandler(){
+        if(this.state.text == ""){
+            alert("Please enter a note!!");
+            return;
+        }
         const note = {
             text: this.state.text,
             id: idValue
