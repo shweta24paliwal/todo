@@ -8,7 +8,7 @@ body {
     background: #eee;
     font-family: "Helvetica Neue", Helvetica, Arial;
 }
-.title{
+.heading{
       color: #7E57C2;
       font-size: 20px;
       font-weight:200;
@@ -37,9 +37,20 @@ h5{
 .col-50:nth-child(3){
   background:#dfdcdc;
 }
-.text-input {
+.title{
     outline: none;
     border: 2px solid #ccc;
+    width:400px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.text-input {
+    text-transform: capitalize;
+    outline: none;
+    border: 2px solid #ccc;
+    padding: 10px;
     width: 400px;
     height: 100px;
     font-size: 16px;
@@ -61,10 +72,17 @@ h5{
 }
 .note{
     background: #fff;
-    padding: 10px 25px 40px 10px;
+    padding: 5px 25px 40px 10px;
     min-height: 120px;
     border-left: 5px solid #EF5350;
     position: relative;
+}
+.title-css{
+    border-bottom: 2px solid #ccc;
+    width:100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .complete-note{
     background: #fff;

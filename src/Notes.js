@@ -14,20 +14,21 @@ class Notes extends Component{
     }
    
      render() {
-       let array = this.props.notesContainer.map((text,id) =>{
+       let array = this.props.notesContainer.map((note,id) =>{
             return(
                 <p className='note' key={id}>
-                    {text.text}
-                    <button className='close-btn' onClick={() => this.deleteBtnClickHandler(text.id)}>X</button><br/><br/><br/>
-                    <button className='edit-btn' onClick={() => this.promptHandler(text.id)}>Edit</button>
-                    <button className='complete-btn' onClick={() => this.markCompleteClickHandler(text.id)}>Mark done</button>
+                    <p className='title-css'>{note.title}</p>
+                    <p>{note.text}</p>
+                    <button className='close-btn' onClick={() => this.deleteBtnClickHandler(note.id)}>X</button><br/><br/><br/>
+                    <button className='edit-btn' onClick={() => this.promptHandler(note.id)}>Edit</button>
+                    <button className='complete-btn' onClick={() => this.markCompleteClickHandler(note.id)}>Mark done</button>
                 </p>
             )
         }
     )
         return (
             <div>
-                <h4 className="text-align-center title">Get this done:</h4>
+                <h4 className="text-align-center heading">Get this done:</h4>
                 <div className='todo-note'>
                    {array}
                 </div>

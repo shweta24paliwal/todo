@@ -74,7 +74,7 @@ class ToDo extends Component{
         return (
             <div>
             
-                <h3 className='title'>To Do Application</h3>
+                <h3 className='heading'>To Do Application</h3>
                 <h5 className="text-align-center">A list about the things to do</h5> 
                 <div className="notes-container">
                     <div className="col-50">
